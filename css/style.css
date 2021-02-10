@@ -87,7 +87,7 @@ li {
  レイアウト
 ---------------------------------*/
 .wrapper {
-  padding-top: 68px;
+  padding-top: 0;
 }
 
 .section {
@@ -370,38 +370,40 @@ li {
 ヘッダー
 ---------------------------------*/
 .header {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  height: 86vh;
-}
-
-.logo {
+  justify-content: center; */
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/top/main-visual.jpg") no-repeat center / cover;
   position: relative;
-  margin-bottom: 30px;
-  padding: 0 20px;
-  text-align: center;
-  color: #fff;
+  padding-top: 68px;
 }
-
+.logo{
+  z-index:999;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family:Krungthep;
+  background-color: rgba(142, 152, 158, 0.5);
+  padding: 10px 15px;
+}
 .logo-title {
-  font-family: "Open sans", sans-serif;
-  font-size: 64px;
-  line-height: 1;
-  letter-spacing: 0.2em;
+  font-size: 40px;
 }
 
 .logo-subtitle {
-  font-size: 20px;
-  margin-top: 5px;
-  text-align: center;
-  letter-spacing: 0.2em;
+  font-size: 25px;
 }
 
 .header .btn {
   position: absolute;
-  top: 200%;
-  left: 32%;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .btn {
   position: relative;
@@ -460,7 +462,7 @@ li {
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: #333333;
+  background-color: #128496;
   -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
@@ -527,7 +529,7 @@ li {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  background-color: black;
+  background-color: #128496;
   opacity: 0.8;
   position: fixed;
   top: 15px;
@@ -563,15 +565,13 @@ li {
 }
 
 .hamburger #contents {
-  background-color: #fff;
-  width: 200px;
-  height: 100%;
+  background-color: #128496;
+  width: 180px;
+  height: auto;
   margin: 0;
   position: fixed;
   top: 0;
-  right: 0;
-  -webkit-transform: translateX(-450px);
-          transform: translateX(-420px);
+  left: -200px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 9999;
@@ -580,7 +580,6 @@ li {
 .hamburger #contents li {
   width: 80%;
   list-style: none;
-  border-bottom: 1px solid #333;
   padding: 2px 15px;
   margin: 0 auto 30px;
 }
@@ -592,17 +591,19 @@ li {
 .hamburger #contents li a {
   position: relative;
   text-decoration: none;
+  text-align: center;
+  padding-bottom: 5px;
   display: block;
-  color:#333;
+  color:#FFF;
   box-sizing: border-box;
+  border-bottom: 1px solid #FFF;
   font-size: 14px;
-  padding: 1rem;
   font-weight: 900;
 }
 
 .hamburger #input:checked ~ #contents {
-  -webkit-transform: translateX(-220px);
-          transform: translateX(-220px);
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
 }
 
 /*--------------------------------
@@ -879,7 +880,7 @@ li {
  フッター
 ---------------------------------*/
 .footer {
-  background-color: #1d1d1d;
+  background-color: #128496;
 }
 
 .footer .inner {
@@ -889,7 +890,7 @@ li {
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #8c8c8c;
+  color: #fff;
 }
 
 .page-top {
@@ -955,20 +956,27 @@ li {
   /* ヘッダー */
   .header {
     height: 100vh;
+    padding: 0;
   }
 
   .logo{
     z-index:999;
     position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
     color: #fff;
+    font-family:Krungthep;
+    background-color: rgba(142, 152, 158, 0.5);
+    padding: 10px;
+    width: 70%;
   }
   .logo-title {
     font-size: 28px;
-    letter-spacing: 0.16em;
   }
 
   .logo-subtitle {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .header .btn{
@@ -1137,10 +1145,11 @@ li {
     padding: 20px 0;
   }
 }
-@media screen and (max-width: 400px) {
-  .hamburger #input:checked ~ #contents {
-  -webkit-transform: translateX(-185px);
-          transform: translateX(-185px);
+@media screen and (max-width:400px){
+  .logo{
+    text-align: center;
+    width: 80%;
+    transform: translateX(-50%, -30%);
   }
 
 }

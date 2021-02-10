@@ -28,11 +28,16 @@ $(function () {
   //ページ内スクロール
   var $nav = $(".gnav");
   var navHeight = $nav.outerHeight();
+  var width = $(window).width();
 
   $('a[href^="#"]').on("click", function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? "html" : href);
-    var position = target.offset().top - navHeight + 85;
+    if (width > 767) {
+      var position = target.offset().top - navHeight + 68;
+    }else if (width < 768) {
+      var position = target.offset().top;      
+    }
     $("html, body").animate(
       {
         scrollTop: position,
