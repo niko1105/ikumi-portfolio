@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーIKUMI KONISHI ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Webデザイナー IKUMI KONISHIのポートフォリオサイトです！'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Webデザイナー IKUMI KONISHIのポートフォリオサイトです！" />
+  <title>IKUMI KONISHI ポートフォリオ </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <!-- ローディング -->
+  <div class="loader-wrapper">
+    <div class="loader">
+      <ul class="hexagon-container">
+        <li class="hexagon hex_1"></li>
+        <li class="hexagon hex_2"></li>
+        <li class="hexagon hex_3"></li>
+        <li class="hexagon hex_4"></li>
+        <li class="hexagon hex_5"></li>
+        <li class="hexagon hex_6"></li>
+        <li class="hexagon hex_7"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrapper">
+
+    <!-- .gnav -->
+    <nav class="pc-only gnav" class="fixed">
+      <ul class="gnav-list">
+        <li class="gnav-item"><a class="gnav-link" href="#works-section">WORKS</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#services-section">SERVICES</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#price-section">PRICE</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- /.gnav -->
+
+    <!-- sp hamburgerメニュー -->
+    <div class="hamburger sp-only">
+      <input id="input" type="checkbox">
+      <label id="label" for="input"><div class="line1"></div><div class="line2"></div><div class="line3"></div></label>
+      <ul id="contents">
+        <li><a href="#works-section">WORKS</a></li>
+        <li><a href="#services-section">SERVICES</a></li>
+        <li><a href="#price-section">PRICE</a></li>
+        <li><a href="#about-section">ABOUT</a></li>
+        <li><a href="#skill-section">SKILL</a></li>
+        <li><a href="#contact-section">CONTACT</a></li>
+      </ul>
+    </div>
+    <!-- /sp hamburgerメニュー -->
+    <!-- .header -->
+    <header class="header">
+      <h1 class="logo">
+        <div class="logo-title">IKUMI KONISHI</div>
+        <div class="logo-subtitle">PORTFOLIO</div>
+        <div class="btn">
+          <div class="btn-cover">
+            <a class="btn-link" href="#contact-section">お問い合わせはこちら</a>
+          </div>
+        </div>
+      </h1>
+      <!-- pcのheader -->
+      <video class="pc-only" id="bg-video" playsinline autoplay loop muted>
+        <source src="video/video.mp4">
+      </video>
+      <!-- Slider全体のコンテナ -->
+      <div class="sp-only swiper-container">
+        <!-- Sliderの内包コンテナ -->
+        <div class="swiper-wrapper">
+          <!-- Slideさせたいコンテンツ -->
+          <div class="swiper-slide slide-item"><img src="img/mv-1.jpg" alt="スライド１"></div>
+          <div class="swiper-slide slide-item"><img src="img/mv-2.jpg" alt="スライド２"></div>
+          <div class="swiper-slide slide-item"><img src="img/mv-3.jpg" alt="スライド３"></div>
+        </div>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="content">
+
+      <!-- .works-section -->
+      <section class="works-section section" id="works-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">WORKS</h2>
+          </div>
+          <div class="section-lead">
+            <p>Web制作の記録です。<br>デザイン練習用の架空サイトも含んでおります。</p>
+          </div>
+          <div class="section-body works slide-left">
+            <div class="works-list js-my-gallery">
+              <figure class="works-item">
+                <a href="img/works/happyslim-pf.png" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/happyslim-pf.png" alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">Happy slim様(WordPress)</div>
+                  <div class="works-text">Design / Coding(Responsive) </div>
+                  <div class="works-url"><a class="works-url-link" href="https://happy-slim.com/" target="_blank">Link</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/corporate-pf.png" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/corporate-pf.png" alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">自作コーポレートサイト(練習)</div>
+                  <div class="works-text">Design / Coding(Responsive) </div>
+                  <div class="works-url"><a class="works-url-link" href="https://niko1105.github.io/corporate-portfolio/" target="_blank">Link</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/linguage-pf.png" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/linguage-pf.png"
+                    alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">英会話教室のサイト(練習)</div>
+                  <div class="works-text">Coding(Responsive)</div>
+                  <div class="works-url"><a class="works-url-link" href="https://niko1105.github.io/linguage-portfolio/" target="_blank">Link</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/cat-pf.png" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/cat-pf.png"
+                    alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">cat's!!(練習)</div>
+                  <div class="works-text">Coding(Responsive)</div>
+                  <div class="works-url"><a class="works-url-link" href="https://niko1105.github.io/cat-portfolio/" target="_blank">Link</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/bs-portfolio.png" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/bs-portfolio.png"
+                    alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">Portfolio(Bootstrap)</div>
+                  <div class="works-text">Design / Coding(Responsive)</div>
+                  <div class="works-url"><a class="works-url-link" href="https://niko1105.github.io/bs-portfolio/" target="_blank">Link</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/patisserie-pf.png" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/patisserie-pf.png"
+                    alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">Patisserie de tokyo freelance(Shopify)</div>
+                  <div class="works-text">Coding(Responsive)</div>
+                  <div class="works-url"><a class="works-url-link" href="https://pastry-de-free.myshopify.com" target="_blank">Link</a>
+                  <p>Pass:ohprob</p>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/konimeshi-pf.png" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/konimeshi-pf.png"
+                    alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">konimeshi(Shopify)</div>
+                  <div class="works-text">Coding(Responsive)</div>
+                  <div class="works-url"><a class="works-url-link" href="https://konimeshi.myshopify.com/" target="_blank">Link</a>
+                  <p>Pass:owtrao</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.works-section -->
+
+      <!-- .services-section -->
+      <section class="services-section section" id="services-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">SERVICE</h2>
+          </div>
+          <div class="section-lead">
+            <p>サービス内容</p>
+          </div>
+          <div class="service-items scrollanime slide-right">
+            <div class="service-item">
+              <div class="service-item-logo">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="service-item-title">
+                コーディング代行
+              </div>
+              <div class="service-item-text">
+                お客様の希望に合わせて、1ページ単位からのコーディングや下層ページのみもお受け致します。<br>簡単なカスタマイズなどお気軽にお声がけください。
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-logo">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="service-item-title">
+                LP制作
+              </div>
+              <div class="service-item-text">
+                商品の魅力やイメージを引き出したページを作成します。<br>レスポンシブ化もお任せ下さい。
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-logo">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="service-item-title">コーポレートサイト制作</div>
+              <div class="service-item-text">お客様のサービスの魅力を最大限に伝えるWebサイト制作をお手伝いいたします。<br>
+              最大限の効果を発揮できるサイト作りを一緒に実現しましょう。<br>
+              保守・運用までサポートいたします
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.services-section -->
+      <!-- .price-section -->
+      <section class="price-section section" id="price-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">PRICE</h2>
+          </div>
+          <div class="section-lead">
+            <p>料金表</p>
+          </div>
+          <div class="price-list slide-top">
+            <ul class="price-item">
+              <li>コーディング(下層)</li>
+              <li>8,000円〜</li>
+            </ul>
+            <ul class="price-item">
+              <li>コーディング(トップ)</li>
+              <li>15,000円〜</li>
+            </ul>
+            <ul class="price-item">
+              <li>コーディング(LP)</li>
+              <li>35,000円〜</li>
+            </ul>
+            <ul class="price-item">
+              <li>LP制作</li>
+              <li>120,000円〜</li>
+            </ul>
+            <ul class="price-item">
+              <li>テンプレートホームページ作成</li>
+              <li>80,000円〜</li>
+            </ul>
+            <ul class="price-item">
+              <li>オリジナルホームページ作成</li>
+              <li>200,000円〜</li>
+            </ul>
+          </div>
+          <div class="price-note">
+            <p>上記金額は目安になります。<br>詳細はお問い合わせ時にご確認ください。些細なことでも気軽にご相談ください。</p>
+          </div>
+        </div>
+      </section>
+      <!-- /.price-section -->
+      <!-- .about-section -->
+      <section class="about-section section" id="about-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">ABOUT</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              私について
+            </p>
+          </div>
+          <div class="section-body about">
+            <div class="about-item">
+              <div class="about-image-wrapper slide-right">
+                <img class="about-image lazyload fadein" data-src="img/about/profile.png" alt="">
+              </div>
+              <div class="about-body slide-left">
+                <p>当サイトをご覧いただきありがとうございます。<br>
+                  小西郁弥と申します。<br>
+                  兵庫県明石市在住の27歳、現在WEB制作フリーランスとして活動しています。
+                </p>
+                <p>  
+                  円滑で気持ちの良いコミュニケーション・素早いレスポンスを心がけております。<br>
+                  クライアント様と良きパートナーになれるよう、誠意を持って対応させていただきます。
+                </p>
+                <p>
+                  ホームページ・サイトをつくるのが初めてのクライアント様に対しても、親身になって対応させていただきますのでご安心ください。
+                </p>
+                  また、制作案件の継続受注にも対応可能です。良い関係性を築けるよう努めさせていただきます。
+                <p>
+                  どうぞよろしくお願いいたします。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.about-section -->
+
+      <!-- .skill-section -->
+      <section class="skill-section section" id="skill-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">SKILL</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              私にできること
+            </p>
+          </div>
+          <div class="section-body skill">
+            <div class="skill-list">
+              <div class="skill-item slide-right">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/html.png" alt="">
+                  <img class="skill-image" src="img/skill/css.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">HTML5/CSS3</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    HTMLとCSSを使った静的なサイトや、CSSでのアニメーションを用いた動的なサイトの作成が得意です。また、レスポンシブ対応も行えます。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item slide-left">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/javascript.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    jQueryなどのライブラリを利用しながらサイトに動きをつけていきます。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item slide-right">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/php-logo.png" alt="">
+                  <img class="skill-image" src="img/skill/mysql-logo.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">PHP/MySQL</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    Webサイトに会員登録、ログインページの構築、お問い合わせフォームの 設置が可能です。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item slide-left">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/photoshop.jpg" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">Photoshop</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    デザインデータを基にコーディングを行ったり、簡単なイラストや写真の加工なども可能です。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item slide-right">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/xd.jpg" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">XD</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    photoshop同様、デザインデータを基にコーディングを行ったり、簡単なイラストや写真の加工なども可能です。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.skill-section -->
+
+      <!-- .contact-section -->
+      <section class="contact-section section" id="contact-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">CONTACT</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              お問い合わせは、メールにてお願い致します。
+            </p>
+          </div>
+          <div class="section-body contact slide-top">
+            <!-- <ul class="contact-list">
+              <li class="contact-item">
+                <a class="contact-link" href="https://twitter.com/" target="_blank"><img class="contact-image"
+                    src="img/contact/icon_tw.png" alt=""></a>
+              </li>
+              <li class="contact-item">
+                <a class="contact-link" href="https://www.facebook.com/" target="_blank"><img class="contact-image"
+                    src="img/contact/icon_fb.png" alt=""></a>
+              </li>
+            </ul> -->
+            <div class="contact-text"><span>konikoni0803@gmail.com</span></div>
+          </div>
+        </div>
+      </section>
+      <!-- /.contact-section -->
+
+    </main>
+
+    <!-- .footer -->
+    <footer class="footer">
+      <div class="page-top" id="js-page-top">
+        TOP
+      </div>
+      <div class="inner">
+        <div class="copyright">Copyright Ikumi Konishi. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+  </div>
+
+  <!-- 下記はPhotoswipeプラグイン用 -->
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+       It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-setup.js"></script>
+  <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
